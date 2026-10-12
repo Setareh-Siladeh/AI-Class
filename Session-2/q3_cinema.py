@@ -1,5 +1,6 @@
 age = int(input("سن مشتری: "))
-day = input("روز هفته: ")
+day = input("روز هفته: ").strip()
+day = day.replace(" ", "").replace("‌", "")
 
 if age < 5:
     price = 0
@@ -10,7 +11,7 @@ elif age >= 60:
 else:
     price = 100000
 
-if day == "سه‌شنبه":
+if day == "سهشنبه":
     price = price * 0.8
 
 if price == 0:
