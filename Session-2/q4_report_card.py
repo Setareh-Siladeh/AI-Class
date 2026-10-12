@@ -1,0 +1,31 @@
+scores = {
+    "Ali": 18,
+    "Sara": 20,
+    "Reza": 9,
+    "Mina": 14,
+    "Omid": 11.5
+}
+
+passed_students = []
+
+for name, score in scores.items():
+    if score >= 17:
+        rank = "عالی"
+    elif score >= 14:
+        rank = "خوب"
+    elif score >= 10:
+        rank = "قبول"
+    else:
+        rank = "مردود"
+
+    print(rank, "→", name + ":", score)
+
+    if score >= 10:
+        passed_students.append(name)
+
+average = sum(scores.values()) / len(scores)
+top_student = max(scores, key=scores.get)
+
+print("دانشجوهای قبول‌شده:", passed_students)
+print("میانگین کلاس:", average)
+print("نفر اول:", top_student)
