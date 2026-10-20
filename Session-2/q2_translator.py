@@ -23,8 +23,7 @@ for word in word_list:
         translated_words = translated_words + 1
     else:
         print("[" + word + "]", end=" ")
-        not_translated_words=
-        not_translated_words + 1
+        not_translated_words = not_translated_words + 1
 
 print()
 
