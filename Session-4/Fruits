@@ -18,7 +18,7 @@ for i in range(50):
     x_train.append([banana_width[i], banana_height[i]])
     y_train.append(1)
 
-new_fruit = [6, 14]
+new_fruit = [6,14]
 
 plt.scatter(apple_width, apple_height, label="Apple")
 plt.scatter(banana_width, banana_height, label="Banana")
